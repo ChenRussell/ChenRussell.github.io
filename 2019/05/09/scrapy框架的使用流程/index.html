@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="hello world,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -79,18 +79,20 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords" content="hello world">
+<meta name="description" content="1. scrapy介绍scrapy是用python实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架。学习链接：1.scrapy中文网2.Scrapy 1.5 文档3.scrapy菜鸟教程 2. scrapy架构图 图中的箭头描述了scrapy的执行流程。  Scrapy Engine(引擎): 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://chenrussell.github.io/2019/03/16/hello-world/index.html">
+<meta property="og:title" content="scrapy框架的使用流程">
+<meta property="og:url" content="https://chenrussell.github.io/2019/05/09/scrapy框架的使用流程/index.html">
 <meta property="og:site_name" content="chenrui&#39;s blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="1. scrapy介绍scrapy是用python实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架。学习链接：1.scrapy中文网2.Scrapy 1.5 文档3.scrapy菜鸟教程 2. scrapy架构图 图中的箭头描述了scrapy的执行流程。  Scrapy Engine(引擎): 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-16T12:21:53.788Z">
+<meta property="og:image" content="https://chenrussell.github.io/Users/chenrui/Pictures/scrapy架构图2.png">
+<meta property="og:image" content="https://chenrussell.github.io/Users/chenrui/Pictures/scrapy架构图.png">
+<meta property="og:updated_time" content="2019-05-09T13:07:44.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="scrapy框架的使用流程">
+<meta name="twitter:description" content="1. scrapy介绍scrapy是用python实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架。学习链接：1.scrapy中文网2.Scrapy 1.5 文档3.scrapy菜鸟教程 2. scrapy架构图 图中的箭头描述了scrapy的执行流程。  Scrapy Engine(引擎): 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯">
+<meta name="twitter:image" content="https://chenrussell.github.io/Users/chenrui/Pictures/scrapy架构图2.png">
 
 
 
@@ -120,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://chenrussell.github.io/2019/03/16/hello-world/">
+  <link rel="canonical" href="https://chenrussell.github.io/2019/05/09/scrapy框架的使用流程/">
 
 
 
 
 
-  <title>Hello World | chenrui's blog</title>
+  <title>scrapy框架的使用流程 | chenrui's blog</title>
   
 
 
@@ -263,7 +265,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://chenrussell.github.io/2019/03/16/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://chenrussell.github.io/2019/05/09/scrapy框架的使用流程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="chenrui">
@@ -280,7 +282,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">scrapy框架的使用流程</h1>
         
 
         <div class="post-meta">
@@ -292,8 +294,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-16T20:21:53+08:00">
-                2019-03-16
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-09T19:39:37+08:00">
+                2019-05-09
               </time>
             
 
@@ -330,15 +332,45 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <h2 id="1-scrapy介绍"><a href="#1-scrapy介绍" class="headerlink" title="1. scrapy介绍"></a>1. scrapy介绍</h2><p>scrapy是用python实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架。<br>学习链接：<br>1.<a href="http://www.scrapyd.cn/doc/" target="_blank" rel="noopener">scrapy中文网</a><br>2.<a href="https://yiyibooks.cn/zomin/Scrapy15/index.html" target="_blank" rel="noopener">Scrapy 1.5 文档</a><br>3.<a href="https://www.runoob.com/w3cnote/scrapy-detail.html" target="_blank" rel="noopener">scrapy菜鸟教程</a></p>
+<h2 id="2-scrapy架构图"><a href="#2-scrapy架构图" class="headerlink" title="2. scrapy架构图"></a>2. scrapy架构图</h2><p><img src="/Users/chenrui/Pictures/scrapy架构图2.png" alt="scrapy架构图1"></p>
+<p>图中的箭头描述了scrapy的执行流程。</p>
+<ul>
+<li><p><strong>Scrapy Engine(引擎)</strong>: 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。</p>
+</li>
+<li><p><strong>Scheduler(调度器)</strong>: 它负责接受引擎发送过来的Request请求，并按照一定的方式进行整理排列，入队，当引擎需要时，交还给引擎。</p>
+</li>
+<li><strong>Downloader（下载器）</strong>:负责下载Scrapy Engine(引擎)发送的所有Requests请求，并将其获取到的Responses交还给Scrapy Engine(引擎)，由引擎交给Spider来处理。</li>
+<li><strong>Spider（爬虫）</strong>：它负责处理所有Responses，从中分析提取数据，获取Item字段需要的数据，并将需要跟进的URL提交给引擎，再次进入Scheduler(调度器)。</li>
+<li><strong>Item Pipeline(管道)</strong>：它负责处理Spider中获取到的Item，并进行进行后期处理（详细分析、过滤、存储等）的地方。</li>
+<li><strong>Downloader Middlewares（下载中间件）</strong>：你可以当作是一个可以自定义扩展下载功能的组件。</li>
+<li><strong>Spider Middlewares（Spider中间件）</strong>：你可以理解为是一个可以自定扩展和操作引擎和Spider中间通信的功能组件（比如进入Spider的Responses，和从Spider出去的Requests）。</li>
+</ul>
+<h2 id="3-Scrapy的运作流程"><a href="#3-Scrapy的运作流程" class="headerlink" title="3. Scrapy的运作流程"></a>3. Scrapy的运作流程</h2><p><img src="/Users/chenrui/Pictures/scrapy架构图.png" alt="scrapy架构图2"></p>
+<p>代码写好，程序开始运行…</p>
+<ul>
+<li>1 引擎：Hi！Spider, 你要处理哪一个网站？</li>
+<li>2 Spider：老大要我处理xxxx.com。</li>
+<li>3 引擎：你把第一个需要处理的URL给我吧。</li>
+<li>4 Spider：给你，第一个URL是xxxxxxx.com。</li>
+<li>5 引擎：Hi！调度器，我这有request请求你帮我排序入队一下。</li>
+<li>6 调度器：好的，正在处理你等一下。</li>
+<li>7 引擎：Hi！调度器，把你处理好的request请求给我。</li>
+<li>8 调度器：给你，这是我处理好的request</li>
+<li>9 引擎：Hi！下载器，你按照老大的下载中间件的设置帮我下载一下这个request请求</li>
+<li>10 下载器：好的！给你，这是下载好的东西。（如果失败：sorry，这个request下载失败了。然后引擎告诉调度器，这个request下载失败了，你记录一下，我们待会儿再下载）</li>
+<li>11 引擎：Hi！Spider，这是下载好的东西，并且已经按照老大的下载中间件处理过了，你自己处理一下（注意！这儿responses默认是交给def parse()这个函数处理的）</li>
+<li>12 Spider：（处理完毕数据之后对于需要跟进的URL），Hi！引擎，我这里有两个结果，这个是我需要跟进的URL，还有这个是我获取到的Item数据。</li>
+<li>13 引擎：Hi ！管道 我这儿有个item你帮我处理一下！调度器！这是需要跟进URL你帮我处理下。然后从第四步开始循环，直到获取完老大需要全部信息。</li>
+<li>14 管道调度器：好的，现在就做！</li>
+</ul>
+<p><strong>注意！只有当调度器中不存在任何request了，整个程序才会停止，（也就是说，对于下载失败的URL，Scrapy也会重新下载。）</strong></p>
+<h2 id="4-制作-Scrapy-爬虫-一共需要4步："><a href="#4-制作-Scrapy-爬虫-一共需要4步：" class="headerlink" title="4. 制作 Scrapy 爬虫 一共需要4步："></a>4. 制作 Scrapy 爬虫 一共需要4步：</h2><ol>
+<li>新建项目 (scrapy startproject xxx)：新建一个新的爬虫项目</li>
+<li>明确目标 （编写items.py）：明确你想要抓取的目标</li>
+<li>制作爬虫 （spiders/xxspider.py）：制作爬虫开始爬取网页</li>
+<li>存储内容 （pipelines.py）：设计管道存储爬取内容</li>
+</ol>
 
       
     </div>
@@ -354,12 +386,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/hello-world/" rel="tag"># hello world</a>
-          
-        </div>
-      
 
       
       
@@ -369,8 +395,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/16/blog-190316/" rel="next" title="blog_190316">
-                <i class="fa fa-chevron-left"></i> blog_190316
+              <a href="/2019/03/16/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -378,10 +404,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/05/09/scrapy框架的使用流程/" rel="prev" title="scrapy框架的使用流程">
-                scrapy框架的使用流程 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -522,7 +544,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-scrapy介绍"><span class="nav-number">1.</span> <span class="nav-text">1. scrapy介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-scrapy架构图"><span class="nav-number">2.</span> <span class="nav-text">2. scrapy架构图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Scrapy的运作流程"><span class="nav-number">3.</span> <span class="nav-text">3. Scrapy的运作流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-制作-Scrapy-爬虫-一共需要4步："><span class="nav-number">4.</span> <span class="nav-text">4. 制作 Scrapy 爬虫 一共需要4步：</span></a></li></ol></div>
             
 
           </div>
