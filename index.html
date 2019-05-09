@@ -334,7 +334,7 @@
         
           
             <h2 id="1-scrapy介绍"><a href="#1-scrapy介绍" class="headerlink" title="1. scrapy介绍"></a>1. scrapy介绍</h2><p>scrapy是用python实现的一个为了爬取网站数据、提取结构性数据而编写的应用框架。<br>学习链接：<br>1.<a href="http://www.scrapyd.cn/doc/" target="_blank" rel="noopener">scrapy中文网</a><br>2.<a href="https://yiyibooks.cn/zomin/Scrapy15/index.html" target="_blank" rel="noopener">Scrapy 1.5 文档</a><br>3.<a href="https://www.runoob.com/w3cnote/scrapy-detail.html" target="_blank" rel="noopener">scrapy菜鸟教程</a></p>
-<h2 id="2-scrapy架构图"><a href="#2-scrapy架构图" class="headerlink" title="2. scrapy架构图"></a>2. scrapy架构图</h2><p><img src="/Users/chenrui/Pictures/scrapy架构图2.png" alt="scrapy架构图1"></p>
+<h2 id="2-scrapy架构图"><a href="#2-scrapy架构图" class="headerlink" title="2. scrapy架构图"></a>2. scrapy架构图</h2><p><img src="https://scrapy-chs.readthedocs.io/zh_CN/0.24/_images/scrapy_architecture.png" alt="scrapy架构图1"></p>
 <p>图中的箭头描述了scrapy的执行流程。</p>
 <ul>
 <li><p><strong>Scrapy Engine(引擎)</strong>: 负责Spider、ItemPipeline、Downloader、Scheduler中间的通讯，信号、数据传递等。</p>
@@ -347,7 +347,7 @@
 <li><strong>Downloader Middlewares（下载中间件）</strong>：你可以当作是一个可以自定义扩展下载功能的组件。</li>
 <li><strong>Spider Middlewares（Spider中间件）</strong>：你可以理解为是一个可以自定扩展和操作引擎和Spider中间通信的功能组件（比如进入Spider的Responses，和从Spider出去的Requests）。</li>
 </ul>
-<h2 id="3-Scrapy的运作流程"><a href="#3-Scrapy的运作流程" class="headerlink" title="3. Scrapy的运作流程"></a>3. Scrapy的运作流程</h2><p><img src="/Users/chenrui/Pictures/scrapy架构图.png" alt="scrapy架构图2"></p>
+<h2 id="3-Scrapy的运作流程"><a href="#3-Scrapy的运作流程" class="headerlink" title="3. Scrapy的运作流程"></a>3. Scrapy的运作流程</h2><p><img src="https://lettleprince.github.io/images/20171214-scrapy_architecture/scrapy_architecture_01.png" alt="scrapy架构图2"></p>
 <p>代码写好，程序开始运行…</p>
 <ul>
 <li>1 引擎：Hi！Spider, 你要处理哪一个网站？</li>
