@@ -335,8 +335,8 @@
           
             <h1 id="一-https原理"><a href="#一-https原理" class="headerlink" title="一. https原理"></a>一. https原理</h1><h2 id="1-https连接建立流程"><a href="#1-https连接建立流程" class="headerlink" title="1. https连接建立流程"></a>1. https连接建立流程</h2><p>​    HTTPS是HTTP的扩展，全称是Hypertext Transfer Protocol Secure。HTTPS通常是承载在SSL上的HTTP，能实现所有HTTP的功能。由于服务器端提供了CA证书，因此服务器端的真实性有一定的保证，不会出现虚假网站，通信被不法分子节流造假的情况。</p>
 <p>https连接建立流程如下图所示：</p>
-<p><img src="./https连接建立原理/https连接建立流程.png" alt="https连接建立流程"></p>
-<p><img src="./https连接建立原理/https连接建立流程2.png" alt="https连接建立流程2"></p>
+<p><img src="https连接建立流程.png" alt="https连接建立流程"></p>
+<p><img src="https连接建立流程2.png" alt="https连接建立流程2"></p>
 <h2 id="2-https与http的区别"><a href="#2-https与http的区别" class="headerlink" title="2. https与http的区别"></a>2. https与http的区别</h2><p>HTTPS协议和HTTP协议的区别：</p>
 <ul>
 <li><p>https协议需要到ca申请证书，一般免费证书很少，需要交费。  </p>
@@ -358,7 +358,7 @@
 <li>大型CA机构用他们的私钥去加密颁发不能被仿制的CA证书。</li>
 <li>由于用户持有大型CA机构的公钥，所以可以鉴定这些证书的真伪，但是不能仿制。</li>
 </ul>
-<p><img src="./https连接建立原理/CA证书.png" alt="ca证书"></p>
+<p><img src="CA证书.png" alt="ca证书"></p>
 <p>为了避免根证书风险，一般有多级CA证书，根证书一般不直接颁发用户证书。<br>如果某个用户的出现了风险，CA机构会发布失效证书列表。</p>
 <h3 id="4-1-CA证书的作用"><a href="#4-1-CA证书的作用" class="headerlink" title="4.1 CA证书的作用"></a>4.1 CA证书的作用</h3><p>鉴权——鉴别对方的可靠性，并不是用于加密数据。</p>
 <h3 id="4-2-CA证书的优势"><a href="#4-2-CA证书的优势" class="headerlink" title="4.2 CA证书的优势"></a>4.2 CA证书的优势</h3><p>由于用户只需要保存少量的根证书就可以确认大多数网站的可靠性，甄别网站可靠性交给CA机构，所以比直接保存大量公钥更有效率。</p>
@@ -397,7 +397,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Charles does this by becoming a man-in-the-middle. Instead of your browser seeing the server’s certificate, Charles dynamically generates a certificate for the server and signs it with its own root certificate (the Charles CA Certificate). Charles receives the server’s certificate, while your browser receives Charles’s certificate. Therefore you will see a security warning, indicating that the root authority is not trusted. If you add the Charles CA Certificate to your trusted certificates you will no longer see any warnings – see below for how to do this.</span><br></pre></td></tr></table></figure>
 <p>Charles作为一个<a href="https://link.jianshu.com?t=https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB" target="_blank" rel="noopener">“中间人代理”</a>，当浏览器和服务器通信时，Charles接收服务器的证书，但动态生成一张证书发送给浏览器，也就是说Charles作为中间代理在浏览器和服务器之间通信，所以通信的数据可以被Charles拦截并解密。由于Charles更改了证书，浏览器校验不通过会给出安全警告，必须安装Charles的证书后才能进行正常访问。</p>
 <p>下面来看具体的流程：</p>
-<p><img src="./https连接建立原理/charles流程.png" alt="charles流程"></p>
+<p><img src="charles流程.png" alt="charles流程"></p>
 <ol>
 <li>客户端向服务器发起HTTPS请求</li>
 <li>Charles拦截客户端的请求，伪装成客户端向服务器进行请求</li>
